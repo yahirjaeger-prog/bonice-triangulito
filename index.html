@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="es-MX" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ciclo de vida del producto · Bonice Triangulito</title>
+  <meta name="description" content="Presentación interactiva sobre las cuatro etapas del ciclo de vida del producto, con el Triangulito de Bonice, un producto descontinuado, como caso de estudio. Proyecto académico de marketing.">
+  <meta name="theme-color" content="#1A56A6">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ciclo de vida del producto · Un análisis de Bonice Triangulito">
+  <meta property="og:description" content="Introducción, crecimiento, madurez y declive explicados con un producto que ya salió del mercado, con fuentes y gráfica interactiva.">
+  <link rel="icon" href="assets/icons/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===================================================================
+       Iconos (originales, dibujados para este proyecto). Las imágenes del
+       producto están en assets/images y sus créditos en data.js.
+       =================================================================== -->
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M12 21v-9"/><path d="M12 12C12 8 9 6 5 6c0 4 3 6 7 6z"/><path d="M12 10c0-3.5 2.5-6 6.5-6 0 3.5-2.5 6-6.5 6z"/></symbol>
+      <symbol id="i-trend-up" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+      <symbol id="i-plateau" viewBox="0 0 24 24"><path d="M3 19c3-1 4.5-10 9-10h9"/><path d="M3 21h18"/></symbol>
+      <symbol id="i-trend-down" viewBox="0 0 24 24"><path d="M3 7l6 6 4-4 8 8"/><path d="M21 11v6h-6"/></symbol>
+      <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 0-14.9-4"/><path d="M4 3v4h4"/><path d="M4 13a8 8 0 0 0 14.9 4"/><path d="M20 21v-4h-4"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></symbol>
+      <symbol id="i-basket" viewBox="0 0 24 24"><path d="M3.5 10h17l-1.6 9.2a1 1 0 0 1-1 .8H6.1a1 1 0 0 1-1-.8z"/><path d="M8 10l4-6 4 6"/><path d="M9.5 14v3M14.5 14v3"/></symbol>
+      <symbol id="i-exit" viewBox="0 0 24 24"><path d="M14 4h5v16h-5"/><path d="M10 8l-4 4 4 4"/><path d="M6 12h10"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+      <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+      <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/><path d="M9.5 13h6M9.5 17h6"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5V5.5"/><path d="M20 18v3H6.5"/><path d="M8.5 7.5h7"/></symbol>
+      <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><path d="M12 7.5v.5"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.3-4.3"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5l9 16H3z"/><path d="M12 10v4"/><path d="M12 17v.5"/></symbol>
+      <symbol id="i-replay" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 3.5v4h4"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.7-3.5 3.3-5.5 6.5-5.5s5.8 2 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8"/><path d="M18 14.8c2 .7 3.2 2.5 3.6 5.2"/></symbol>
+      <symbol id="i-snow" viewBox="0 0 24 24"><path d="M12 2v20M3.3 7l17.4 10M3.3 17l17.4-10"/><path d="M9.5 3.5L12 6l2.5-2.5M9.5 20.5L12 18l2.5 2.5"/></symbol>
+      <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9l1.5-5h13L20 9"/><path d="M4 9h16v1.5a2.7 2.7 0 0 1-5.3 0 2.7 2.7 0 0 1-5.4 0A2.7 2.7 0 0 1 4 10.5z"/><path d="M5 13v7h14v-7"/><path d="M10 20v-4h4v4"/></symbol>
+      <symbol id="i-question" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6v.6"/><path d="M12 17v.5"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/></symbol>
+      <symbol id="i-triangle" viewBox="0 0 24 24"><path d="M12 3.5l9 16H3z"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7a4.3 4.3 0 0 1 7.5 2.8C19.5 15.4 12 20 12 20z"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.6 4.6 2.4 6.4 7 7-4.6.6-6.4 2.4-7 7-.6-4.6-2.4-6.4-7-7 4.6-.6 6.4-2.4 7-7z"/><path d="M19 15.5c.2 1.8.9 2.5 2.5 2.7-1.6.2-2.3.9-2.5 2.6-.2-1.7-.9-2.4-2.5-2.6 1.6-.2 2.3-.9 2.5-2.7z"/></symbol>
+      <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6.5 4h11L21 9l-9 11L3 9z"/><path d="M3 9h18"/><path d="M9.5 4L12 9l2.5-5"/><path d="M12 9v11"/></symbol>
+      <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16"/><path d="M7 20h10"/><path d="M5 7h14"/><path d="M5 7l-3 6a3 3 0 0 0 6 0z"/><path d="M19 7l-3 6a3 3 0 0 0 6 0z"/></symbol>
+
+    </defs>
+  </svg>
+
+  <!-- ===================================================================
+       Barra superior (pantallas medianas y pequeñas)
+       =================================================================== -->
+  <header class="topbar">
+    <button class="topbar__menu" type="button" data-nav-open aria-controls="sitenav" aria-expanded="false">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-menu"></use></svg>
+      <span>Índice</span>
+    </button>
+    <p class="topbar__current" aria-live="polite">
+      <span class="topbar__count" data-current-count>01/11</span>
+      <span class="topbar__label" data-current-label>Inicio</span>
+    </p>
+    <button class="topbar__btn" type="button" data-panel="ficha" aria-label="Ficha del producto">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-doc"></use></svg>
+      <span class="topbar__btn-text">Ficha</span>
+    </button>
+    <div class="progress" aria-hidden="true"><span class="progress__bar" data-progress-bar></span></div>
+  </header>
+
+  <!-- ===================================================================
+       Navegación principal: carril lateral en escritorio, panel en móvil
+       =================================================================== -->
+  <nav id="sitenav" class="sitenav" aria-label="Secciones de la presentación">
+    <div class="sitenav__head">
+      <a class="brand" href="#inicio">
+        <img class="brand__mark" src="assets/images/triangulito-chocolate-empaque-sq.png" width="240" height="240" alt="" decoding="async">
+        <span class="brand__text"><strong>Ciclo de vida</strong><span>Caso Bonice Triangulito</span></span>
+      </a>
+      <button class="icon-btn sitenav__close" type="button" data-nav-close aria-label="Cerrar índice">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg>
+      </button>
+    </div>
+
+    <ol class="navlist">
+      <li><a class="navlink" href="#inicio" data-nav="inicio"><span class="navlink__idx">01</span><span class="navlink__label">Inicio</span></a></li>
+      <li><a class="navlink" href="#producto" data-nav="producto"><span class="navlink__idx">02</span><span class="navlink__label">Producto</span></a></li>
+      <li><a class="navlink" href="#modelo" data-nav="modelo"><span class="navlink__idx">03</span><span class="navlink__label">Modelo</span></a></li>
+      <li class="navlist__group">
+        <span class="navlist__heading" id="nav-etapas">Etapas</span>
+        <ol class="navlist navlist--stages" aria-labelledby="nav-etapas">
+          <li><a class="navlink navlink--stage" href="#introduccion" data-nav="introduccion" data-stage="1"><span class="navlink__idx">1</span><span class="navlink__label">Introducción</span></a></li>
+          <li><a class="navlink navlink--stage" href="#crecimiento" data-nav="crecimiento" data-stage="2"><span class="navlink__idx">2</span><span class="navlink__label">Crecimiento</span></a></li>
+          <li><a class="navlink navlink--stage" href="#madurez" data-nav="madurez" data-stage="3"><span class="navlink__idx">3</span><span class="navlink__label">Madurez</span></a></li>
+          <li><a class="navlink navlink--stage" href="#declive" data-nav="declive" data-stage="4"><span class="navlink__idx">4</span><span class="navlink__label">Declive</span></a></li>
+        </ol>
+      </li>
+      <li><a class="navlink" href="#comparacion" data-nav="comparacion"><span class="navlink__idx">08</span><span class="navlink__label">Resumen</span></a></li>
+      <li><a class="navlink" href="#quiz" data-nav="quiz"><span class="navlink__idx">09</span><span class="navlink__label">Quiz</span></a></li>
+      <li><a class="navlink" href="#conclusion" data-nav="conclusion"><span class="navlink__idx">10</span><span class="navlink__label">Conclusión</span></a></li>
+      <li><a class="navlink" href="#fuentes" data-nav="fuentes"><span class="navlink__idx">11</span><span class="navlink__label">Fuentes</span></a></li>
+    </ol>
+
+    <div class="sitenav__actions">
+      <button class="nav-action" type="button" data-panel="ficha">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-doc"></use></svg> Ficha del producto
+      </button>
+      <button class="nav-action" type="button" data-panel="glosario">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-book"></use></svg> Glosario
+      </button>
+      <button class="nav-action" type="button" data-action="fullscreen" hidden>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-expand"></use></svg> <span data-fullscreen-label>Pantalla completa</span>
+      </button>
+      <a class="nav-action" data-action="newtab" href="./" target="_blank" rel="noopener" hidden>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-external"></use></svg> Abrir en pestaña nueva
+      </a>
+    </div>
+  </nav>
+  <div class="nav-backdrop" data-nav-close hidden></div>
+
+  <main id="contenido">
+    <noscript>
+      <p class="noscript">Esta presentación necesita JavaScript para mostrar la gráfica, la tabla comparativa, las fuentes y el cuestionario. El texto principal de cada etapa sí está disponible.</p>
+    </noscript>
+
+    <!-- =================================================================
+         1. PORTADA
+         ================================================================= -->
+    <section id="inicio" class="section hero" data-nav-label="Inicio" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow hero__eyebrow" data-hero-step>Marketing · Caso de estudio</p>
+          <h1 id="hero-title" class="hero__title" data-hero-step>Ciclo de vida del producto</h1>
+          <p class="hero__subtitle" data-hero-step>Un análisis de <span class="hero__brand">Bonice Triangulito</span></p>
+          <p class="hero__product" data-hero-step>
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-triangle"></use></svg>
+            <span><strong>Producto analizado:</strong> Triangulito de Bonice · postre congelado en empaque triangular, hoy descontinuado</span>
+          </p>
+          <p class="hero__intro" data-hero-step>Todo producto llega al mercado, gana aceptación, se consolida y, tarde o temprano, puede perder vigencia. El Triangulito ya recorrió ese camino: dejó de venderse, aunque su marca sigue en las calles. Analizamos su ciclo y separamos lo documentado de lo que es interpretación.</p>
+          <div class="hero__actions" data-hero-step>
+            <a class="btn btn--primary btn--lg" href="#producto">
+              Explorar el ciclo de vida
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"></use></svg>
+            </a>
+            <a class="btn btn--ghost" href="#modelo">Ir directo al modelo</a>
+          </div>
+        </div>
+
+        <div class="hero__art" data-hero-art>
+          <svg class="hero__curve" viewBox="0 0 600 600" aria-hidden="true" focusable="false">
+            <path data-hero-curve pathLength="1" d="M30 470 C 110 468, 160 450, 195 380 S 260 160, 320 150 S 430 190, 470 260 S 540 375, 578 392" fill="none" stroke="#F7C97E" stroke-width="12" stroke-linecap="round"/>
+          </svg>
+          <div class="hero__disc" aria-hidden="true"></div>
+          <figure class="hero__product-figure">
+            <img class="hero__cutout"
+                 src="assets/images/triangulito-chocolate-empaque.png" width="486" height="594"
+                 alt="Dos empaques triangulares del Triangulito de Bonice sabor chocolate, color café, con el pingüino de la marca y la palabra «CHOCOLATE»."
+                 fetchpriority="high" decoding="async">
+            <img class="hero__photo hero__photo--second"
+                 src="assets/images/triangulito-empaque-chocolate.webp" width="272" height="153"
+                 alt="Empaque del Triangulito de Bonice sabor chocolate sostenido en una mano."
+                 decoding="async">
+            <figcaption class="hero__credit">Imágenes reales del empaque · créditos en Fuentes</figcaption>
+          </figure>
+          <p class="hero__sticker" aria-hidden="true"><span>Producto</span>descontinuado</p>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#producto">
+        <span>Desliza para comenzar</span>
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-down"></use></svg>
+      </a>
+    </section>
+
+    <!-- =================================================================
+         2. PRESENTACIÓN DEL PRODUCTO
+         ================================================================= -->
+    <section id="producto" class="section section--paper product" data-nav-label="Producto" aria-labelledby="producto-title">
+      <div class="container">
+        <div class="product__top">
+          <figure class="product__figure" data-reveal>
+            <div class="product__stage">
+              <img class="product__cutout" src="assets/images/triangulito-chocolate-empaque.png" width="486" height="594" loading="lazy" decoding="async"
+                   alt="Empaques triangulares del Triangulito de Bonice sabor chocolate: color café, con un cono de galleta de fondo, el pingüino de la marca y la palabra «CHOCOLATE».">
+              <img class="product__inset" src="assets/images/triangulito-chocolate-producto.webp" width="500" height="375" loading="lazy" decoding="async"
+                   alt="El Triangulito de chocolate fuera del empaque: una pieza triangular cubierta de chocolate, mordida, en la mano de una persona.">
+            </div>
+            <figcaption>El empaque del Triangulito de chocolate y, en el recuadro, el producto en un comercial para Ecuador <a class="cite" href="#fuente-axxo-ecuador" data-cite="axxo-ecuador"></a>.</figcaption>
+          </figure>
+
+          <div class="product__intro">
+            <p class="eyebrow">El caso de estudio</p>
+            <h2 id="producto-title" class="section-title">Triangulito de Bonice</h2>
+            <p class="lead">Analizamos <strong>un producto concreto</strong>, no la marca completa: el Triangulito, un postre congelado en empaque triangular de la marca Bonice. La marca sigue a la venta con sus hielitos tradicionales <a class="cite" href="#fuente-wiki-bonice" data-cite="wiki-bonice"></a>; el Triangulito, en cambio, ya no se encuentra en el mercado, según la prensa <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a>.</p>
+
+            <div class="sheet" data-reveal>
+              <div class="sheet__head">
+                <h3 class="sheet__title"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-doc"></use></svg> Ficha del producto</h3>
+                <span class="tag tag--fact"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Documentado</span>
+              </div>
+              <dl class="sheet__list" data-product-sheet></dl>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-4" data-reveal>
+          <article class="info-card">
+            <span class="info-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-users"></use></svg></span>
+            <h3 class="info-card__title">Público objetivo potencial</h3>
+            <p>Niñas, niños y adolescentes que compraban a los vendedores de Bonice en la calle, y adultos que hoy lo recuerdan con nostalgia. La prensa lo cuenta entre los dulces que «marcaron» la infancia <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a>.</p>
+            <span class="tag tag--theory"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg> Interpretación</span>
+          </article>
+          <article class="info-card">
+            <span class="info-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-snow"></use></svg></span>
+            <h3 class="info-card__title">Necesidad que satisface</h3>
+            <p>Un antojo frío y dulce, de bajo precio y listo para comerse en la calle. Cuando la marca llegó a México, sus productos costaban 2.50 pesos <a class="cite" href="#fuente-emprendedor-2023" data-cite="emprendedor-2023"></a>.</p>
+            <span class="tag tag--theory"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg> Interpretación</span>
+          </article>
+          <article class="info-card">
+            <span class="info-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-store"></use></svg></span>
+            <h3 class="info-card__title">Contexto del mercado</h3>
+            <p>Quala opera en México desde 2004, con planta en Toluca <a class="cite" href="#fuente-emprendedor-2022" data-cite="emprendedor-2022"></a>. Bonice fue su primer producto en el país <a class="cite" href="#fuente-expansion-2024" data-cite="expansion-2024"></a> y se vende en la calle mediante vendedores independientes <a class="cite" href="#fuente-wiki-bonice" data-cite="wiki-bonice"></a>.</p>
+            <span class="tag tag--fact"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Documentado</span>
+          </article>
+          <article class="info-card">
+            <span class="info-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-question"></use></svg></span>
+            <h3 class="info-card__title">¿Por qué este caso?</h3>
+            <p>Es un producto que ya salió del mercado mientras su marca sigue vigente. Permite discutir el ciclo completo, incluidos el declive y el retiro, y muestra que el fin de un producto no es el fin de una marca.</p>
+            <span class="tag tag--theory"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg> Criterio del equipo</span>
+          </article>
+        </div>
+
+        <div class="variants" data-reveal>
+          <div class="variants__head">
+            <h3 class="block-title">Un formato, varias versiones</h3>
+            <p class="muted">Las fuentes registran el Triangulito en tres sabores. No permiten separar su historia por sabor ni por país, así que analizamos el formato en conjunto. La versión de chocolate es la que recuerda la prensa <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a>.</p>
+          </div>
+          <ul class="variants__list">
+            <li class="variant variant--active">
+              <img class="variant__art" src="assets/images/triangulito-chocolate-empaque-sq.png" width="240" height="240" loading="lazy" decoding="async" alt="Empaque del Triangulito sabor chocolate.">
+              <div><strong>Chocolate</strong><span>Anunciado en Colombia y Ecuador <a class="cite" href="#fuente-axxo-colombia" data-cite="axxo-colombia"></a> <a class="cite" href="#fuente-axxo-ecuador" data-cite="axxo-ecuador"></a>; «no ha podido regresar», según la prensa <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a></span></div>
+              <span class="variant__badge"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Versión principal</span>
+            </li>
+            <li class="variant">
+              <span class="variant__icon variant__icon--cookie" aria-hidden="true"><svg class="icon"><use href="#i-triangle"></use></svg></span>
+              <div><strong>Galleta o chocogalleta</strong><span>Comercial fechado en 2015 <a class="cite" href="#fuente-youtube-2015" data-cite="youtube-2015"></a></span></div>
+            </li>
+            <li class="variant">
+              <span class="variant__icon variant__icon--caramel" aria-hidden="true"><svg class="icon"><use href="#i-triangle"></use></svg></span>
+              <div><strong>Arequipe</strong><span>Comercial para Quala Colombia <a class="cite" href="#fuente-vimeo-arequipe" data-cite="vimeo-arequipe"></a></span></div>
+            </li>
+            <li class="variant">
+              <img class="variant__art" src="assets/images/bonice-doble-commons-sq.webp" width="240" height="240" loading="lazy" decoding="async" alt="Empaque alargado de Bonice Doble, el formato tradicional de la marca.">
+              <div><strong>Bonice tradicional</strong><span>Sigue a la venta · fuera del análisis <a class="cite" href="#fuente-wiki-bonice" data-cite="wiki-bonice"></a></span></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="timeline-block" data-reveal>
+          <div class="timeline-block__head">
+            <h3 class="block-title">Contexto: empresa, marca y producto</h3>
+            <p class="note"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"></use></svg> <span>Cada hito indica si se refiere a la <strong>empresa</strong>, a la <strong>marca</strong> o al <strong>producto</strong>: la historia de Bonice no es la historia del Triangulito.</span></p>
+          </div>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <span class="timeline__date">1980</span>
+              <span class="timeline__scope">Empresa</span>
+              <p>Michael de Rhodes funda Quala en Bogotá, Colombia <a class="cite" href="#fuente-wiki-quala" data-cite="wiki-quala"></a>.</p>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__date">1989 o 1998</span>
+              <span class="timeline__scope">Marca</span>
+              <p>Quala crea Bonice en Colombia. Las fuentes difieren en el año <a class="cite" href="#fuente-emprendedor-2023" data-cite="emprendedor-2023"></a> <a class="cite" href="#fuente-wiki-bonice" data-cite="wiki-bonice"></a>.</p>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__date">2004</span>
+              <span class="timeline__scope">Empresa y marca</span>
+              <p>Quala abre en Toluca su primera planta fuera de Colombia <a class="cite" href="#fuente-emprendedor-2022" data-cite="emprendedor-2022"></a> y en agosto Bonice llega a las calles de la Ciudad de México <a class="cite" href="#fuente-emprendedor-2023" data-cite="emprendedor-2023"></a>.</p>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__date">2005–2006</span>
+              <span class="timeline__scope">Marca</span>
+              <p>Bonice se expande a Guadalajara, Villahermosa, Monterrey y Tijuana <a class="cite" href="#fuente-wiki-bonice" data-cite="wiki-bonice"></a>.</p>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__date">2015</span>
+              <span class="timeline__scope timeline__scope--product">Producto</span>
+              <p>Se publica un comercial del Triangulito sabor galleta o chocogalleta <a class="cite" href="#fuente-youtube-2015" data-cite="youtube-2015"></a>.</p>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__date">2023</span>
+              <span class="timeline__scope">Marca y producto</span>
+              <p>La prensa reporta que los vendedores de Bonice escasean <a class="cite" href="#fuente-emprendedor-2023" data-cite="emprendedor-2023"></a>. En Colombia se publica una petición para que vuelva el triangulito <a class="cite" href="#fuente-change-2023" data-cite="change-2023"></a>.</p>
+            </li>
+            <li class="timeline__item">
+              <span class="timeline__date">2024</span>
+              <span class="timeline__scope timeline__scope--product">Producto</span>
+              <p>El Informador incluye el triángulo de chocolate de Bonice entre los dulces que ya no existen <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a>.</p>
+            </li>
+          </ol>
+        </div>
+
+        <div class="callout callout--warn" role="note" data-reveal>
+          <svg class="icon callout__icon" aria-hidden="true" focusable="false"><use href="#i-search"></use></svg>
+          <div>
+            <h3 class="callout__title">Lo que no sabemos</h3>
+            <p>No encontramos la fecha de lanzamiento ni la de retiro del Triangulito, datos de sus ventas ni un comunicado oficial sobre su descontinuación. Las fuentes solo permiten acotar que se anunciaba en 2015 y que en 2024 la prensa lo daba por desaparecido. Por eso, todas las curvas de esta presentación son <strong>conceptuales</strong>: ilustran el modelo, no el desempeño real del producto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         3. EL MODELO: GRÁFICA INTERACTIVA
+         ================================================================= -->
+    <section id="modelo" class="section section--dark model" data-nav-label="Modelo" aria-labelledby="modelo-title">
+      <div class="container">
+        <div class="model__intro" data-reveal>
+          <p class="eyebrow eyebrow--light">El modelo</p>
+          <h2 id="modelo-title" class="section-title">¿Qué es el ciclo de vida del producto?</h2>
+          <p class="lead">Es un modelo que describe cómo cambian las ventas y las utilidades de un producto desde que llega al mercado hasta que pierde vigencia. Sirve para anticipar retos y ajustar la mezcla de marketing (producto, precio, plaza y promoción) en cada etapa <a class="cite" href="#fuente-openstax-93" data-cite="openstax-93"></a> <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>.</p>
+          <p class="model__aside">En 1965, Theodore Levitt observó que los directivos de marketing conocían el concepto, pero en su encuesta ninguno lo usaba de forma estratégica y muy pocos de forma táctica <a class="cite" href="#fuente-levitt-1965" data-cite="levitt-1965"></a>.</p>
+        </div>
+
+        <div class="lc" data-lifecycle data-reveal>
+          <div class="lc__toolbar">
+            <p class="lc__hint"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"></use></svg> Selecciona una etapa en los botones o en la gráfica.</p>
+            <div class="lc__legend" aria-label="Leyenda">
+              <span class="legend-item"><span class="legend-swatch legend-swatch--sales" aria-hidden="true"></span>Ventas</span>
+              <span class="legend-item"><span class="legend-swatch legend-swatch--profit" aria-hidden="true"></span>Utilidades</span>
+            </div>
+          </div>
+          <div class="stage-tabs" role="tablist" aria-label="Etapas del ciclo de vida" data-stage-tabs></div>
+          <div class="lc__body">
+            <div class="lc__chart" data-main-chart></div>
+            <div class="lc__panel" id="lc-panel" role="tabpanel" tabindex="0" data-stage-panel></div>
+          </div>
+          <p class="lc__note">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-alert"></use></svg>
+            <span><strong>Gráfica conceptual.</strong> Ilustra el modelo teórico; no representa ventas reales del Triangulito y por eso no tiene escala numérica.</span>
+          </p>
+        </div>
+
+        <div class="model__extras" data-reveal>
+          <div class="acc acc--dark">
+            <h3 class="acc__heading">
+              <button class="acc__btn" type="button" aria-expanded="false" aria-controls="acc-limitaciones" id="acc-limitaciones-btn">
+                <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-scale"></use></svg>
+                <span>Limitaciones del modelo</span>
+                <span class="acc__state" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acc__panel" id="acc-limitaciones" role="region" aria-labelledby="acc-limitaciones-btn">
+              <div class="acc__inner">
+                <ul class="bullets">
+                  <li>No todos los productos recorren las cuatro etapas ni lo hacen al mismo ritmo; algunos pasan de la introducción al declive, como las modas pasajeras <a class="cite" href="#fuente-openstax-93" data-cite="openstax-93"></a>.</li>
+                  <li>La madurez suele ser la etapa más larga y puede durar años o décadas <a class="cite" href="#fuente-openstax-93" data-cite="openstax-93"></a>.</li>
+                  <li>Ubicar un producto en una etapa exige datos de ventas a lo largo del tiempo. Sin ellos, solo pueden señalarse rasgos compatibles con una etapa.</li>
+                  <li>El modelo también ha sido criticado como guía de decisión: Dhalla y Yuspeh abren su artículo con una marca estancada a la que se le negó inversión para lanzar otro producto. Tratar una meseta como declive puede adelantar el final <a class="cite" href="#fuente-dhalla-1976" data-cite="dhalla-1976"></a>.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--light" type="button" data-panel="glosario">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-book"></use></svg>
+            Glosario de estrategias
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         4. ETAPA 1 — INTRODUCCIÓN
+         ================================================================= -->
+    <section id="introduccion" class="section stage" data-stage="1" data-nav-label="Introducción" aria-labelledby="introduccion-title">
+      <div class="container">
+        <header class="stage__header" data-reveal>
+          <div class="stage__heading">
+            <p class="stage__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-sprout"></use></svg> Etapa 1 de 4</p>
+            <h2 id="introduccion-title" class="stage__title"><span class="stage__num" aria-hidden="true">01</span>Introducción</h2>
+            <p class="stage__kicker">Llegar al mercado y darse a conocer</p>
+            <p class="lead">El producto acaba de lanzarse. Pocos consumidores lo conocen, la distribución es limitada y la empresa invierte para darlo a conocer, por lo que las utilidades suelen ser bajas o negativas <a class="cite" href="#fuente-openstax-93" data-cite="openstax-93"></a>.</p>
+          </div>
+          <figure class="stage__figure">
+            <div class="mini-chart" data-mini-chart="1"></div>
+            <figcaption>Segmento de introducción en la curva conceptual.</figcaption>
+          </figure>
+        </header>
+
+        <div class="stage__grid" data-reveal>
+          <div>
+            <h3 class="block-title">Características</h3>
+            <ul class="traits">
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Ventas bajas</strong> y de crecimiento lento.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Costos altos</strong> de lanzamiento, producción y promoción.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Distribución limitada:</strong> hay que convencer a los puntos de venta.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Pocos competidores directos;</strong> el reto es que el consumidor pruebe el producto.</span></li>
+            </ul>
+          </div>
+          <div class="indicators" data-indicators="1" role="group" aria-label="Tendencias típicas de la introducción"></div>
+        </div>
+
+        <div class="adoption" data-reveal>
+          <h3 class="block-title">Ruta del consumidor</h3>
+          <ol class="adoption__steps">
+            <li class="adoption__step is-focus"><span class="adoption__n">1</span><strong>Conocimiento</strong><span>Descubre que el producto existe.</span></li>
+            <li class="adoption__step is-focus"><span class="adoption__n">2</span><strong>Prueba</strong><span>Lo compra por primera vez.</span></li>
+            <li class="adoption__step"><span class="adoption__n">3</span><strong>Recompra</strong><span>Lo vuelve a elegir.</span></li>
+            <li class="adoption__step"><span class="adoption__n">4</span><strong>Preferencia</strong><span>Lo prefiere sobre otras marcas.</span></li>
+          </ol>
+          <p class="adoption__legend"><span class="focus-key" aria-hidden="true"></span> <span>Pasos 1 y 2: foco de la introducción, que busca crear conocimiento para estimular la prueba <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>.</span></p>
+        </div>
+
+        <div class="questions" data-reveal>
+          <div class="questions__head">
+            <h3 class="block-title">Preguntas clave</h3>
+            <button class="link-btn" type="button" data-expand-all aria-pressed="false">Abrir todas</button>
+          </div>
+          <div class="acc-group">
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q1-1" id="q1-1-btn"><span>¿Qué sucede cuando el producto comienza a comercializarse?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q1-1" role="region" aria-labelledby="q1-1-btn"><div class="acc__inner"><p>Llega a sus primeros puntos de venta. El consumidor aún no lo conoce ni sabe por qué elegirlo, así que las compras son, sobre todo, de prueba.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q1-2" id="q1-2-btn"><span>¿Cómo se comportan las ventas?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q1-2" role="region" aria-labelledby="q1-2-btn"><div class="acc__inner"><p>Crecen despacio: dependen de que el mercado se entere de que el producto existe y de que lo encuentre. Las utilidades son bajas por los costos de lanzar y escalar el producto <a class="cite" href="#fuente-openstax-93" data-cite="openstax-93"></a>.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q1-3" id="q1-3-btn"><span>¿Qué retos enfrenta la empresa?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q1-3" role="region" aria-labelledby="q1-3-btn"><div class="acc__inner"><p>Recuperar la inversión, conseguir puntos de venta, explicar el producto al consumidor y resistir una posible baja aceptación inicial.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q1-4" id="q1-4-btn"><span>¿Qué papel tiene la publicidad?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q1-4" role="region" aria-labelledby="q1-4-btn"><div class="acc__inner"><p>Es central. Esta etapa se caracteriza por construir conocimiento para estimular la prueba <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>: el mensaje explica qué es el producto y por qué vale la pena probarlo.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q1-5" id="q1-5-btn"><span>¿Qué estrategias de marketing pueden utilizarse?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q1-5" role="region" aria-labelledby="q1-5-btn"><div class="acc__inner"><p>Dependen de cómo se combinen precio y promoción <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>:</p>
+                <ul class="bullets">
+                  <li><button class="term" type="button" data-term="descremado">Descremado</button> rápido: precio alto y mucha promoción.</li>
+                  <li>Descremado lento: precio alto y poca inversión promocional.</li>
+                  <li><button class="term" type="button" data-term="penetracion">Penetración</button> rápida: precio bajo para ganar volumen y participación.</li>
+                </ul></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case" data-reveal>
+          <h3 class="case__title">Caso Triangulito de Bonice</h3>
+          <div class="case__grid">
+            <div class="case__col case__col--fact">
+              <p class="tag tag--fact"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Evidencia documentada</p>
+              <ul class="bullets">
+                <li>Bonice llegó a las calles de la Ciudad de México en agosto de 2004, con vendedores vestidos de azul y carritos <a class="cite" href="#fuente-emprendedor-2023" data-cite="emprendedor-2023"></a>.</li>
+                <li>Fue el primer producto de Quala en México <a class="cite" href="#fuente-expansion-2024" data-cite="expansion-2024"></a>; al llegar, sus productos costaban 2.50 pesos <a class="cite" href="#fuente-emprendedor-2023" data-cite="emprendedor-2023"></a>.</li>
+              </ul>
+              <p class="case__limit"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"></use></svg> <span>Estos hechos describen el lanzamiento de <strong>la marca</strong>. No encontramos cuándo se lanzó el Triangulito.</span></p>
+            </div>
+            <div class="case__col case__col--theory">
+              <p class="tag tag--theory"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg> Aplicación teórica al producto</p>
+              <p class="case__note">Propuesta hipotética: así se habría lanzado el Triangulito según el modelo. No afirma que la marca lo haya hecho.</p>
+              <ul class="bullets">
+                <li>Darlo a probar a través de los vendedores que ya recorren escuelas y colonias.</li>
+                <li>Un precio cercano al de los hielitos tradicionales para facilitar la primera compra.</li>
+                <li>Comunicar lo que lo hace distinto: su forma triangular y su sabor.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="strategy" data-reveal>
+          <p class="strategy__eyebrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-target"></use></svg> Estrategia recomendada</p>
+          <h3 class="strategy__title">Penetración apoyada en la red de vendedores</h3>
+          <p class="strategy__text">Precio accesible y prueba inmediata en los mismos lugares donde ya se compra Bonice.</p>
+          <div class="strategy__why">
+            <h4>¿Por qué?</h4>
+            <p>Es una compra de impulso y de bajo precio. Usar una red de venta que ya existe reduce el costo de la introducción, y la penetración conviene cuando el volumen puede crecer rápido. Además, la prueba es la principal barrera de esta etapa <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         5. ETAPA 2 — CRECIMIENTO
+         ================================================================= -->
+    <section id="crecimiento" class="section stage" data-stage="2" data-nav-label="Crecimiento" aria-labelledby="crecimiento-title">
+      <div class="container">
+        <header class="stage__header" data-reveal>
+          <div class="stage__heading">
+            <p class="stage__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trend-up"></use></svg> Etapa 2 de 4</p>
+            <h2 id="crecimiento-title" class="stage__title"><span class="stage__num" aria-hidden="true">02</span>Crecimiento</h2>
+            <p class="stage__kicker">Ganar aceptación y expandirse</p>
+            <p class="lead">El mercado acepta el producto: las ventas aumentan con rapidez, llegan clientes nuevos y aparecen competidores que imitan la propuesta en cuanto ven ingresos y rentabilidad <a class="cite" href="#fuente-openstax-93" data-cite="openstax-93"></a>.</p>
+          </div>
+          <figure class="stage__figure">
+            <div class="mini-chart" data-mini-chart="2"></div>
+            <figcaption>Segmento de crecimiento en la curva conceptual.</figcaption>
+          </figure>
+        </header>
+
+        <div class="stage__grid" data-reveal>
+          <div>
+            <h3 class="block-title">Características</h3>
+            <ul class="traits">
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Ventas en aumento acelerado</strong> y más recompra.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Utilidades crecientes</strong> al repartir costos entre más unidades.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Llegan imitadores</strong> atraídos por el éxito del producto.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Oportunidad de expansión</strong> a nuevos canales, regiones y sabores.</span></li>
+            </ul>
+          </div>
+          <div class="indicators" data-indicators="2" role="group" aria-label="Tendencias típicas del crecimiento"></div>
+        </div>
+
+        <div class="rings" data-rings data-reveal>
+          <div class="rings__art" aria-hidden="true">
+            <span class="rings__ring" style="--i:5"></span>
+            <span class="rings__ring" style="--i:4"></span>
+            <span class="rings__ring" style="--i:3"></span>
+            <span class="rings__ring" style="--i:2"></span>
+            <span class="rings__ring" style="--i:1"></span>
+            <span class="rings__core"></span>
+          </div>
+          <div class="rings__content">
+            <h3 class="block-title">Así se amplía la distribución</h3>
+            <ol class="rings__list">
+              <li style="--i:1">Primeras rutas de vendedores</li>
+              <li style="--i:2">Toda la ciudad</li>
+              <li style="--i:3">Otras ciudades</li>
+              <li style="--i:4">Cobertura nacional</li>
+              <li style="--i:5">Otros países</li>
+            </ol>
+            <p class="note"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"></use></svg> <span>Ilustración del modelo: cuando el producto se vuelve masivo, ampliar los canales aumenta la participación <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>.</span></p>
+            <button class="link-btn" type="button" data-rings-replay>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-replay"></use></svg> Repetir animación
+            </button>
+          </div>
+        </div>
+
+        <div class="questions" data-reveal>
+          <div class="questions__head">
+            <h3 class="block-title">Preguntas clave</h3>
+            <button class="link-btn" type="button" data-expand-all aria-pressed="false">Abrir todas</button>
+          </div>
+          <div class="acc-group">
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q2-1" id="q2-1-btn"><span>¿Qué ocurre con las ventas y la demanda?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q2-1" role="region" aria-labelledby="q2-1-btn"><div class="acc__inner"><p>Crecen rápido: a los primeros compradores se suman consumidores nuevos y la recompra se vuelve frecuente <a class="cite" href="#fuente-openstax-93" data-cite="openstax-93"></a>.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q2-2" id="q2-2-btn"><span>¿Cómo evoluciona el conocimiento de marca?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q2-2" role="region" aria-labelledby="q2-2-btn"><div class="acc__inner"><p>La marca deja de ser desconocida. Por eso la promoción cambia su mensaje: del conocimiento a la preferencia <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q2-3" id="q2-3-btn"><span>¿Qué sucede con la competencia?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q2-3" role="region" aria-labelledby="q2-3-btn"><div class="acc__inner"><p>Los ingresos y la rentabilidad atraen a marcas imitadoras <a class="cite" href="#fuente-openstax-93" data-cite="openstax-93"></a>. La diferenciación empieza a importar.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q2-4" id="q2-4-btn"><span>¿Qué oportunidades de distribución aparecen?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q2-4" role="region" aria-labelledby="q2-4-btn"><div class="acc__inner"><p>Cuando el producto se vuelve masivo, ampliar los canales aumenta la participación <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>: nuevas ciudades, más rutas de venta, tiendas o exportación.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q2-5" id="q2-5-btn"><span>¿Qué estrategias son pertinentes?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q2-5" role="region" aria-labelledby="q2-5-btn"><div class="acc__inner"><p>Invertir en producto y plaza para crecer con rapidez <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>, añadir variantes, mantener un precio competitivo y usar publicidad que construya preferencia.</p></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case" data-reveal>
+          <h3 class="case__title">Caso Triangulito de Bonice</h3>
+          <div class="case__grid">
+            <div class="case__col case__col--fact">
+              <p class="tag tag--fact"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Evidencia documentada</p>
+              <ul class="bullets">
+                <li>Bonice se extendió a Guadalajara y Villahermosa en 2005 y a Monterrey y Tijuana en 2006 <a class="cite" href="#fuente-wiki-bonice" data-cite="wiki-bonice"></a>.</li>
+                <li>Hoy se vende en más de cien ciudades de todos los estados, mediante vendedores independientes organizados como franquicia <a class="cite" href="#fuente-wiki-bonice" data-cite="wiki-bonice"></a>.</li>
+              </ul>
+              <p class="case__limit"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"></use></svg> <span>Es la expansión de <strong>la marca</strong>; no hay cifras que muestren el crecimiento del Triangulito.</span></p>
+            </div>
+            <div class="case__col case__col--theory">
+              <p class="tag tag--theory"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg> Aplicación teórica al producto</p>
+              <p class="case__note">Propuesta hipotética: decisiones coherentes si el Triangulito estuviera en crecimiento.</p>
+              <ul class="bullets">
+                <li>Llevarlo a todas las rutas de vendedores y a tiendas de barrio.</li>
+                <li>Sumar sabores adaptados a cada mercado, como la versión de arequipe anunciada en Colombia <a class="cite" href="#fuente-vimeo-arequipe" data-cite="vimeo-arequipe"></a>.</li>
+                <li>Publicidad que construya preferencia: el Triangulito como «el Bonice diferente».</li>
+              </ul>
+            </div>
+          </div>
+          <figure class="case__figure">
+            <img src="assets/images/bonice-vendedores.webp" width="1000" height="676" loading="lazy" decoding="async"
+                 alt="Vendedores de Bonice con camisetas azules de la marca y un carrito exhibidor de productos Bonice.">
+            <figcaption>La red de vendedores de Bonice, el canal por el que se distribuía la marca. Foto: Alto Nivel, vía Emprendedor <a class="cite" href="#fuente-emprendedor-2023" data-cite="emprendedor-2023"></a>.</figcaption>
+          </figure>
+        </div>
+
+        <div class="strategy" data-reveal>
+          <p class="strategy__eyebrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-target"></use></svg> Estrategia recomendada</p>
+          <h3 class="strategy__title">Ampliar cobertura y sabores con la red de vendedores</h3>
+          <p class="strategy__text">Aprovechar la expansión de la marca para que el Triangulito llegue a cada ruta, con sabores para distintos gustos.</p>
+          <div class="strategy__why">
+            <h4>¿Por qué?</h4>
+            <p>En el crecimiento, invertir en producto y plaza ayuda a maximizar la participación y escalar rápido <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>. Una red de vendedores organizada como franquicia <a class="cite" href="#fuente-wiki-bonice" data-cite="wiki-bonice"></a> permite llevar un producto nuevo a muchas ciudades sin abrir puntos de venta propios.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         6. ETAPA 3 — MADUREZ
+         ================================================================= -->
+    <section id="madurez" class="section stage" data-stage="3" data-nav-label="Madurez" aria-labelledby="madurez-title">
+      <div class="container">
+        <header class="stage__header" data-reveal>
+          <div class="stage__heading">
+            <p class="stage__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-plateau"></use></svg> Etapa 3 de 4</p>
+            <h2 id="madurez-title" class="stage__title"><span class="stage__num" aria-hidden="true">03</span>Madurez</h2>
+            <p class="stage__kicker">Consolidarse y defender la posición</p>
+            <p class="lead">Las ventas crecen poco o se estabilizan y la rentabilidad se aplana <a class="cite" href="#fuente-openstax-93" data-cite="openstax-93"></a>. La competencia es intensa. Suele ser la etapa más larga: puede durar años o incluso décadas <a class="cite" href="#fuente-openstax-93" data-cite="openstax-93"></a>.</p>
+          </div>
+          <figure class="stage__figure">
+            <div class="mini-chart" data-mini-chart="3"></div>
+            <figcaption>Segmento de madurez en la curva conceptual.</figcaption>
+          </figure>
+        </header>
+
+        <div class="stage__grid" data-reveal>
+          <div>
+            <h3 class="block-title">Características</h3>
+            <ul class="traits">
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Crecimiento lento o nulo:</strong> la mayoría de los compradores potenciales ya conoce el producto.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Competencia intensa</strong> por precio y por la preferencia del consumidor.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Diferenciación y lealtad</strong> se vuelven decisivas.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Estabilidad</strong> en utilidades, clientes y precios <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>.</span></li>
+            </ul>
+          </div>
+          <div class="indicators" data-indicators="3" role="group" aria-label="Tendencias típicas de la madurez"></div>
+        </div>
+
+        <div class="levers" data-reveal>
+          <div class="levers__head">
+            <h3 class="block-title">Tres palancas para mantener la preferencia</h3>
+            <p class="muted">Pulsa cada tarjeta para ver qué significa y cómo podría aplicarse.</p>
+          </div>
+          <div class="levers__grid">
+            <article class="lever acc">
+              <h4 class="acc__heading"><button class="acc__btn lever__btn" type="button" aria-expanded="false" aria-controls="lever-1" id="lever-1-btn">
+                <span class="lever__icon" aria-hidden="true"><svg class="icon"><use href="#i-gem"></use></svg></span>
+                <span class="lever__name">Diferenciación</span>
+                <span class="lever__summary">Destacar lo que la competencia no puede copiar.</span>
+                <span class="acc__state" aria-hidden="true"></span>
+              </button></h4>
+              <div class="acc__panel" id="lever-1" role="region" aria-labelledby="lever-1-btn"><div class="acc__inner">
+                <p>Cuando los productos se parecen, el consumidor elige por precio. Diferenciar protege el margen.</p>
+                <p class="lever__apply"><span class="tag tag--theory"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg> Propuesta</span> Destacar su forma triangular, distinta de los hielitos en tubo de la propia marca.</p>
+              </div></div>
+            </article>
+            <article class="lever acc">
+              <h4 class="acc__heading"><button class="acc__btn lever__btn" type="button" aria-expanded="false" aria-controls="lever-2" id="lever-2-btn">
+                <span class="lever__icon" aria-hidden="true"><svg class="icon"><use href="#i-heart"></use></svg></span>
+                <span class="lever__name">Fidelización</span>
+                <span class="lever__summary">Conservar a quienes ya lo compran.</span>
+                <span class="acc__state" aria-hidden="true"></span>
+              </button></h4>
+              <div class="acc__panel" id="lever-2" role="region" aria-labelledby="lever-2-btn"><div class="acc__inner">
+                <p>Retener clientes cuesta menos que conquistar nuevos en un mercado saturado.</p>
+                <p class="lever__apply"><span class="tag tag--theory"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg> Propuesta</span> Promociones con los vendedores de cada colonia y combinaciones con otros productos de la marca.</p>
+              </div></div>
+            </article>
+            <article class="lever acc">
+              <h4 class="acc__heading"><button class="acc__btn lever__btn" type="button" aria-expanded="false" aria-controls="lever-3" id="lever-3-btn">
+                <span class="lever__icon" aria-hidden="true"><svg class="icon"><use href="#i-sparkle"></use></svg></span>
+                <span class="lever__name">Innovación</span>
+                <span class="lever__summary">Renovar sin perder la esencia.</span>
+                <span class="acc__state" aria-hidden="true"></span>
+              </button></h4>
+              <div class="acc__panel" id="lever-3" role="region" aria-labelledby="lever-3-btn"><div class="acc__inner">
+                <p>Nuevos sabores, tamaños o versiones renuevan el interés y responden a cambios del mercado.</p>
+                <p class="lever__apply"><span class="tag tag--fact"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Documentado</span> En 2015 se anunció el Triangulito sabor galleta o chocogalleta <a class="cite" href="#fuente-youtube-2015" data-cite="youtube-2015"></a>, y en Colombia una versión de arequipe <a class="cite" href="#fuente-vimeo-arequipe" data-cite="vimeo-arequipe"></a>.</p>
+              </div></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="questions" data-reveal>
+          <div class="questions__head">
+            <h3 class="block-title">Preguntas clave</h3>
+            <button class="link-btn" type="button" data-expand-all aria-pressed="false">Abrir todas</button>
+          </div>
+          <div class="acc-group">
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q3-1" id="q3-1-btn"><span>¿Qué ocurre cuando el crecimiento de las ventas se desacelera?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q3-1" role="region" aria-labelledby="q3-1-btn"><div class="acc__inner"><p>Casi todos los compradores potenciales ya conocen el producto. Para crecer hay que ganar clientes a la competencia o encontrar nuevos usos y segmentos.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q3-2" id="q3-2-btn"><span>¿Cómo influye la competencia?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q3-2" role="region" aria-labelledby="q3-2-btn"><div class="acc__inner"><p>Con muchos competidores, la marca invierte para defender su espacio y su precio, lo que presiona las utilidades.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q3-3" id="q3-3-btn"><span>¿Por qué la diferenciación se vuelve importante?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q3-3" role="region" aria-labelledby="q3-3-btn"><div class="acc__inner"><p>Si el consumidor percibe que todas las opciones son iguales, decide por precio. Sabor, forma, empaque o valores de marca le dan otra razón para elegir.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q3-4" id="q3-4-btn"><span>¿Qué estrategias mantienen la preferencia del consumidor?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q3-4" role="region" aria-labelledby="q3-4-btn"><div class="acc__inner"><p>La <button class="term" type="button" data-term="modificacion-mercado">modificación del mercado</button> lleva el producto a nuevos clientes; la <button class="term" type="button" data-term="modificacion-producto">modificación del producto</button> lo ajusta a lo que pide el mercado <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q3-5" id="q3-5-btn"><span>¿Qué papel tienen la distribución, la promoción y la innovación?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q3-5" role="region" aria-labelledby="q3-5-btn"><div class="acc__inner"><ul class="bullets"><li><strong>Distribución:</strong> mantener cobertura y visibilidad en el punto de venta.</li><li><strong>Promoción:</strong> recordar la marca y fidelizar.</li><li><strong>Innovación:</strong> nuevos sabores, tamaños o versiones que renueven el interés.</li></ul></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case case--wide" data-reveal>
+          <h3 class="case__title">¿Llegó el Triangulito a la madurez?</h3>
+          <div class="case__grid case__grid--3">
+            <div class="case__col case__col--need">
+              <p class="tag tag--need"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-search"></use></svg> Evidencia que haría falta</p>
+              <ul class="bullets">
+                <li>Ventas anuales del Triangulito.</li>
+                <li>Participación frente a otras paletas y helados.</li>
+                <li>Rentabilidad del formato triangular.</li>
+                <li>Fechas de lanzamiento y de retiro.</li>
+              </ul>
+              <p class="case__limit"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"></use></svg> <span>Estos datos no son públicos.</span></p>
+            </div>
+            <div class="case__col case__col--fact">
+              <p class="tag tag--fact"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Señales documentadas</p>
+              <ul class="bullets">
+                <li>Nuevos sabores: galleta o chocogalleta en 2015 <a class="cite" href="#fuente-youtube-2015" data-cite="youtube-2015"></a> y arequipe en Colombia <a class="cite" href="#fuente-vimeo-arequipe" data-cite="vimeo-arequipe"></a>. Modificar el producto es una estrategia propia de la madurez <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>.</li>
+                <li>Se volvió un recuerdo generacional: la prensa lo cuenta entre los dulces que «marcaron» la infancia <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a>.</li>
+                <li>La marca diversificó su oferta con versiones con yogur y Bonice Doble <a class="cite" href="#fuente-wiki-bonice" data-cite="wiki-bonice"></a>.</li>
+              </ul>
+            </div>
+            <div class="case__col case__col--theory">
+              <p class="tag tag--theory"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg> Interpretación</p>
+              <p>Lanzar sabores nuevos y ser recordado por toda una generación son rasgos <strong>compatibles</strong> con la madurez, pero <strong>no la demuestran</strong>. Sin ventas no podemos confirmar cuándo la alcanzó ni cuánto duró.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="strategy" data-reveal>
+          <p class="strategy__eyebrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-target"></use></svg> Estrategia recomendada · análisis retrospectivo</p>
+          <h3 class="strategy__title">Modificar el producto: sabores y empaque</h3>
+          <p class="strategy__text">Renovar sabores para mantener el interés y, si el empaque triangular era caro de producir, rediseñarlo sin perder la forma que lo hacía reconocible.</p>
+          <div class="strategy__why">
+            <h4>¿Por qué?</h4>
+            <p>El modelo propone modificar el producto para ajustarlo al mercado <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>. La marca sí lanzó sabores nuevos <a class="cite" href="#fuente-youtube-2015" data-cite="youtube-2015"></a>; un rediseño del empaque habría atacado el costo que, según un rumor, afectaba al producto <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         7. ETAPA 4 — DECLIVE
+         ================================================================= -->
+    <section id="declive" class="section stage" data-stage="4" data-nav-label="Declive" aria-labelledby="declive-title">
+      <div class="container">
+        <header class="stage__header" data-reveal>
+          <div class="stage__heading">
+            <p class="stage__tag"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-trend-down"></use></svg> Etapa 4 de 4</p>
+            <h2 id="declive-title" class="stage__title"><span class="stage__num" aria-hidden="true">04</span>Declive</h2>
+            <p class="stage__kicker">Perder vigencia… y salir del mercado</p>
+            <p class="lead">Las ventas y las utilidades disminuyen de forma significativa <a class="cite" href="#fuente-openstax-93" data-cite="openstax-93"></a>. El declive puede ser lento o abrupto y no implica que desaparezca la marca completa: puede afectar solo a un sabor, un tamaño o un formato. Es justo lo que ilustra el Triangulito.</p>
+          </div>
+          <figure class="stage__figure">
+            <div class="mini-chart" data-mini-chart="4"></div>
+            <figcaption>Segmento de declive en la curva conceptual.</figcaption>
+          </figure>
+        </header>
+
+        <div class="stage__grid" data-reveal>
+          <div>
+            <h3 class="block-title">Características</h3>
+            <ul class="traits">
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Caída sostenida</strong> de ventas y utilidades.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Cambios en preferencias,</strong> hábitos de compra o costos reducen la rentabilidad.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Productos sustitutos</strong> satisfacen la misma necesidad.</span></li>
+              <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg><span><strong>Recorte de gastos</strong> y revisión de si conviene mantener el producto.</span></li>
+            </ul>
+          </div>
+          <div class="indicators" data-indicators="4" role="group" aria-label="Tendencias típicas del declive"></div>
+        </div>
+
+        <div class="responses" data-reveal>
+          <div class="responses__head">
+            <h3 class="block-title">Compara las respuestas estratégicas</h3>
+            <p class="muted">Selecciona una opción para ver qué implica, cuándo tiene sentido y qué pasó con el Triangulito.</p>
+          </div>
+          <div class="responses__tabs" role="tablist" aria-label="Respuestas estratégicas ante el declive" data-response-tabs></div>
+          <div class="responses__panel" role="tabpanel" tabindex="0" id="responses-panel" data-response-panel></div>
+        </div>
+
+        <div class="questions" data-reveal>
+          <div class="questions__head">
+            <h3 class="block-title">Preguntas clave</h3>
+            <button class="link-btn" type="button" data-expand-all aria-pressed="false">Abrir todas</button>
+          </div>
+          <div class="acc-group">
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q4-1" id="q4-1-btn"><span>¿Qué puede causar una disminución de las ventas?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q4-1" role="region" aria-labelledby="q4-1-btn"><div class="acc__inner"><p>Cambios en los gustos del consumidor, productos sustitutos, costos de producción más altos, nuevas regulaciones, competencia por precio o pérdida de puntos de venta.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q4-2" id="q4-2-btn"><span>¿Cómo influyen los cambios en las preferencias del consumidor?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q4-2" role="region" aria-labelledby="q4-2-btn"><div class="acc__inner"><p>Si cambian los gustos o los hábitos de compra (por ejemplo, si se compra menos en la calle), los productos que dependen de ese hábito pierden ventas aunque se les siga recordando con cariño.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q4-3" id="q4-3-btn"><span>¿Qué papel tienen los productos sustitutos?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q4-3" role="region" aria-labelledby="q4-3-btn"><div class="acc__inner"><p>Un <button class="term" type="button" data-term="sustituto">sustituto</button> satisface la misma necesidad de otra forma. Otras paletas, helados o aguas frescas compiten por el mismo antojo.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q4-4" id="q4-4-btn"><span>¿Cómo puede responder la empresa?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q4-4" role="region" aria-labelledby="q4-4-btn"><div class="acc__inner"><p>Reducir sus actividades a lo esencial, <button class="term" type="button" data-term="cosecha">cosechar</button> recortando gastos para conservar ingresos o <button class="term" type="button" data-term="desinversion">desinvertir</button>, es decir, vender o descontinuar el producto para proteger el resto del portafolio <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>.</p></div></div>
+            </div>
+            <div class="acc">
+              <h4 class="acc__heading"><button class="acc__btn" type="button" aria-expanded="false" aria-controls="q4-5" id="q4-5-btn"><span>¿Cuándo tiene sentido renovar, reposicionar o retirar?</span><span class="acc__state" aria-hidden="true"></span></button></h4>
+              <div class="acc__panel" id="q4-5" role="region" aria-labelledby="q4-5-btn"><div class="acc__inner"><ul class="bullets"><li><strong>Renovar</strong> si el problema es el producto y la demanda es recuperable.</li><li><strong>Reposicionar</strong> si existe un segmento que lo valora por otras razones.</li><li><strong>Retirar</strong> si las pérdidas persisten o mantenerlo cuesta demasiado.</li></ul></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case case--wide" data-reveal>
+          <h3 class="case__title">El declive y la salida del Triangulito</h3>
+          <div class="case__grid case__grid--3">
+            <div class="case__col case__col--fact">
+              <p class="tag tag--fact"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Lo que se sabe del retiro</p>
+              <ul class="bullets">
+                <li>La prensa lo incluye entre los dulces que «ya no existen en el mercado o son muy difíciles de encontrar» y afirma que el triángulo de chocolate «no ha podido regresar» <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a>.</li>
+                <li>Sobre la causa solo hay rumores: un empaque triangular complicado y costoso de producir, cuyas esquinas podían lastimar <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a>. <span class="claim">rumor, no confirmado</span></li>
+                <li>No encontramos un comunicado oficial de Quala ni la fecha del retiro.</li>
+              </ul>
+            </div>
+            <div class="case__col case__col--fact">
+              <p class="tag tag--fact"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Contexto de la marca</p>
+              <ul class="bullets">
+                <li>Desde hace unos años es raro encontrar vendedores de Bonice. Las explicaciones son teorías: la pandemia, la poca ganancia del vendedor y las restricciones al comercio ambulante <a class="cite" href="#fuente-emprendedor-2023" data-cite="emprendedor-2023"></a>. <span class="claim">teorías, no datos oficiales</span></li>
+                <li>La marca continúa: se vende en más de cien ciudades <a class="cite" href="#fuente-wiki-bonice" data-cite="wiki-bonice"></a>.</li>
+                <li>Persiste el recuerdo: en 2023 se publicó en Colombia una petición para que vuelva, aunque reunió pocas firmas <a class="cite" href="#fuente-change-2023" data-cite="change-2023"></a>.</li>
+              </ul>
+            </div>
+            <div class="case__col case__col--theory">
+              <p class="tag tag--theory"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg> Interpretación</p>
+              <p>El Triangulito muestra el final del ciclo: un producto puede retirarse mientras su marca sigue vigente. Si el rumor del empaque es cierto, el retiro sería coherente con la <strong>desinversión</strong>: dejar un formato costoso para proteger al resto del portafolio <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="strategy" data-reveal>
+          <p class="strategy__eyebrow"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-target"></use></svg> Estrategia recomendada · análisis retrospectivo</p>
+          <h3 class="strategy__title">Retirar el formato, conservar la marca y medir la nostalgia</h3>
+          <p class="strategy__text">Descontinuar un producto poco rentable protege a la marca. Una edición por tiempo limitado permitiría comprobar, con poco riesgo, si la nostalgia se convierte en ventas.</p>
+          <div class="strategy__why">
+            <h4>¿Por qué?</h4>
+            <p>La desinversión protege al resto del portafolio <a class="cite" href="#fuente-openstax-94" data-cite="openstax-94"></a>. Otras marcas han regresado productos descontinuados por tiempo limitado, como la Paleta Vampiro <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a>: es una prueba barata antes de pensar en un relanzamiento.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         8. COMPARACIÓN DE LAS CUATRO ETAPAS
+         ================================================================= -->
+    <section id="comparacion" class="section section--paper compare" data-nav-label="Resumen" aria-labelledby="comparacion-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Resumen de estudio</p>
+          <h2 id="comparacion-title" class="section-title">Las cuatro etapas de un vistazo</h2>
+          <p class="lead">Comportamiento típico según el modelo. No son datos del Triangulito.</p>
+        </div>
+        <div class="compare__wrap" data-reveal>
+          <table class="compare-table">
+            <caption class="sr-only">Comparación de las cuatro etapas del ciclo de vida del producto</caption>
+            <thead>
+              <tr>
+                <th scope="col">Etapa</th>
+                <th scope="col">Ventas</th>
+                <th scope="col">Objetivo del marketing</th>
+                <th scope="col">Retos principales</th>
+                <th scope="col">Estrategia recomendada</th>
+              </tr>
+            </thead>
+            <tbody data-compare-body></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         9. CUESTIONARIO
+         ================================================================= -->
+    <section id="quiz" class="section quiz-section" data-nav-label="Quiz" aria-labelledby="quiz-title">
+      <div class="container container--narrow">
+        <div class="section-head section-head--center" data-reveal>
+          <p class="eyebrow">Actividad de aprendizaje</p>
+          <h2 id="quiz-title" class="section-title">Pon a prueba lo que aprendiste</h2>
+          <p class="lead">Cinco preguntas sobre las etapas. Recibirás una explicación después de cada respuesta.</p>
+        </div>
+        <div class="quiz" data-quiz data-reveal></div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         10. CONCLUSIÓN
+         ================================================================= -->
+    <section id="conclusion" class="section section--dark conclusion" data-nav-label="Conclusión" aria-labelledby="conclusion-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow eyebrow--light">Conclusión</p>
+          <h2 id="conclusion-title" class="section-title">Lo que aprendimos</h2>
+          <p class="lead">El ciclo de vida del producto muestra que un mismo producto necesita decisiones distintas según su momento: lo que funciona en la introducción (dar a conocer) no sirve en la madurez (defender y diferenciar) ni en el declive (decidir si conviene seguir). El Triangulito añade una lección: el final de un producto no es el final de su marca.</p>
+        </div>
+
+        <div class="verdict" data-reveal>
+          <div class="verdict__col">
+            <h3 class="verdict__title"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"></use></svg> Hechos documentados</h3>
+            <ul class="bullets">
+              <li>El Triangulito de Bonice fue un postre congelado en empaque triangular, con versiones de chocolate, galleta o chocogalleta y arequipe <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a> <a class="cite" href="#fuente-youtube-2015" data-cite="youtube-2015"></a> <a class="cite" href="#fuente-vimeo-arequipe" data-cite="vimeo-arequipe"></a>.</li>
+              <li>Se anunciaba todavía en 2015 <a class="cite" href="#fuente-youtube-2015" data-cite="youtube-2015"></a>; en 2024 la prensa lo daba por desaparecido <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a>.</li>
+              <li>La marca Bonice sigue a la venta en más de cien ciudades <a class="cite" href="#fuente-wiki-bonice" data-cite="wiki-bonice"></a>.</li>
+              <li>No hay comunicado oficial sobre el retiro; la explicación del empaque es un rumor <a class="cite" href="#fuente-informador-2024" data-cite="informador-2024"></a>.</li>
+            </ul>
+          </div>
+          <div class="verdict__col verdict__col--theory">
+            <h3 class="verdict__title"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-bulb"></use></svg> Interpretaciones</h3>
+            <ul class="bullets">
+              <li>Los sabores nuevos y el recuerdo generacional son rasgos compatibles con una etapa de madurez.</li>
+              <li>Su desaparición corresponde a la decisión final del declive: retirar el producto y conservar la marca.</li>
+              <li>Una edición por tiempo limitado sería la forma de bajo riesgo de medir la nostalgia.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="limits" data-reveal>
+          <h3 class="block-title">Limitaciones del análisis</h3>
+          <ul class="limits__list">
+            <li>No hay datos públicos de ventas ni fechas de lanzamiento o retiro; las curvas son conceptuales.</li>
+            <li>Las fuentes son periodísticas, enciclopédicas o videos publicitarios; la causa del retiro solo existe como rumor.</li>
+            <li>Hubo versiones por sabor y por país que las fuentes no permiten separar.</li>
+            <li>Las fuentes difieren en datos de la marca, como su año de creación.</li>
+          </ul>
+        </div>
+
+        <blockquote class="closing" data-reveal>
+          <p>Con la evidencia disponible <strong>no es posible reconstruir con datos</strong> cuándo vivió cada etapa el Triangulito. Sí podemos sostener que completó su ciclo hasta el retiro y que la marca sobrevivió a su producto, como prevé el modelo cuando una empresa desinvierte en un formato.</p>
+        </blockquote>
+
+        <div class="conclusion__actions" data-reveal>
+          <a class="btn btn--light btn--lg" href="#modelo">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-replay"></use></svg>
+            Explorar las etapas otra vez
+          </a>
+          <a class="btn btn--outline-light" href="#inicio">
+            <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-home"></use></svg>
+            Volver al inicio
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================
+         11. FUENTES Y CRÉDITOS
+         ================================================================= -->
+    <section id="fuentes" class="section section--paper sources" data-nav-label="Fuentes" aria-labelledby="fuentes-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Fuentes y créditos</p>
+          <h2 id="fuentes-title" class="section-title">Fuentes consultadas</h2>
+          <p class="lead">Cada número entre corchetes de la presentación remite a esta lista. Consulta realizada el <span data-accessed>25 de octubre de 2026</span>.</p>
+        </div>
+        <div class="sources__groups" data-sources></div>
+
+        <div class="credits">
+          <h3 class="block-title">Créditos de las imágenes</h3>
+          <p class="credits__note">Las imágenes del producto son fotogramas de comerciales y fotografías de terceros. Pertenecen a sus titulares y se reproducen recortadas, con fines académicos y de análisis, con crédito a su fuente.</p>
+          <ul class="credits__list credits__list--images" data-image-credits></ul>
+          <h3 class="block-title credits__subtitle">Otros créditos</h3>
+          <ul class="credits__list">
+            <li><strong>Iconos y gráficas:</strong> elaboración propia.</li>
+            <li><strong>Tipografías:</strong> Bricolage Grotesque y Figtree, licencia SIL Open Font License.</li>
+            <li>Bonice y BonIce son marcas de su titular, la empresa Quala.</li>
+          </ul>
+          <p class="credits__team" data-team hidden></p>
+          <p class="disclaimer">Proyecto académico independiente. No está afiliado ni patrocinado por Quala ni por la marca Bonice.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>Ciclo de vida del producto · Caso Bonice Triangulito · Proyecto académico de marketing</p>
+      <a class="link-btn" href="#inicio">Volver arriba <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-up"></use></svg></a>
+    </div>
+  </footer>
+
+  <!-- Navegación rápida entre secciones -->
+  <nav class="pager" aria-label="Navegación entre secciones">
+    <button class="pager__btn" type="button" data-pager="prev" aria-label="Sección anterior">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-up"></use></svg>
+    </button>
+    <button class="pager__btn" type="button" data-pager="next" aria-label="Sección siguiente">
+      <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-down"></use></svg>
+    </button>
+  </nav>
+
+  <!-- Panel lateral reutilizable (ficha, glosario) -->
+  <dialog class="panel" id="panel" aria-labelledby="panel-title">
+    <div class="panel__inner">
+      <header class="panel__head">
+        <h2 class="panel__title" id="panel-title">Panel</h2>
+        <button class="icon-btn" type="button" data-panel-close aria-label="Cerrar panel">
+          <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg>
+        </button>
+      </header>
+      <div class="panel__body" data-panel-body></div>
+    </div>
+  </dialog>
+
+  <!-- Ventana emergente de citas -->
+  <div class="cite-pop" id="cite-pop" role="dialog" aria-modal="false" aria-labelledby="cite-pop-title" hidden>
+    <div class="cite-pop__head">
+      <p class="cite-pop__label" id="cite-pop-title">Fuente</p>
+      <button class="icon-btn icon-btn--sm" type="button" data-cite-close aria-label="Cerrar fuente">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"></use></svg>
+      </button>
+    </div>
+    <div class="cite-pop__body" data-cite-body></div>
+  </div>
+
+  <script src="js/core.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/lifecycle.js" defer></script>
+  <script src="js/interactions.js" defer></script>
+  <script src="js/quiz.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

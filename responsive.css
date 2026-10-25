@@ -1,0 +1,212 @@
+/* ==========================================================================
+   responsive.css — Adaptaciones por tamaño de pantalla
+   El diseño base es para tableta/escritorio con barra superior;
+   a partir de 1200 px la navegación se convierte en un carril lateral.
+   ========================================================================== */
+
+/* ---------- Escritorio amplio: carril lateral fijo ---------- */
+@media (min-width: 1200px) {
+  :root { --topbar-h: 0px; }
+  html { scroll-padding-top: 0; }
+  body { padding-left: var(--rail-w); }
+  .topbar { display: none; }
+  .sitenav {
+    width: var(--rail-w);
+    transform: none;
+    visibility: visible;
+    transition: none;
+    box-shadow: none;
+    padding-top: 28px;
+  }
+  .sitenav__close { display: none; }
+  .nav-backdrop { display: none !important; }
+  .hero { min-height: min(100svh, 940px); }
+}
+
+/* ---------- Pantallas medianas ---------- */
+@media (max-width: 1040px) {
+  .case__grid--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .case__grid--3 > .case__col--theory { grid-column: 1 / -1; }
+  .levers__grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 860px) {
+  .stage-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lc__body { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .hero__inner { grid-template-columns: 1fr; }
+  .hero__text { max-width: none; }
+  .hero__art { width: min(100%, 400px); margin-top: 8px; }
+  .hero { padding-bottom: 88px; }
+
+  .product__top { grid-template-columns: 1fr; }
+  .product__figure { position: static; max-width: 420px; }
+  .product__figure { max-width: 560px; }
+
+  .stage__header,
+  .stage__grid { grid-template-columns: 1fr; }
+  .stage__figure { max-width: 560px; }
+
+  .rings { grid-template-columns: 1fr; }
+  .rings__art { max-width: 240px; }
+
+  .strategy {
+    grid-template-columns: 1fr;
+    grid-template-areas: "eyebrow" "title" "text" "why";
+  }
+  .strategy__why { margin-top: 10px; }
+
+  .verdict { grid-template-columns: 1fr; }
+  .timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .model__extras { grid-template-columns: 1fr; }
+  .model__extras .btn { justify-self: start; }
+}
+
+/* ---------- Tabla comparativa → tarjetas ---------- */
+@media (max-width: 760px) {
+  .compare__wrap { border: 0; background: none; border-radius: 0; overflow: visible; }
+  .compare-table,
+  .compare-table tbody,
+  .compare-table tr,
+  .compare-table th,
+  .compare-table td { display: block; width: 100%; }
+  .compare-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .compare-table tbody { display: grid; gap: 14px; }
+  .compare-table tbody tr {
+    border: 1px solid var(--line);
+    border-top: 6px solid var(--stage);
+    border-radius: var(--radius);
+    background: var(--paper);
+    overflow: hidden;
+  }
+  .compare-table tbody th {
+    width: 100%;
+    box-shadow: none;
+    background: var(--stage-tint);
+    border-bottom: 1px solid var(--line);
+  }
+  .compare-table td { padding: 12px 18px; border-bottom: 1px solid var(--line); }
+  .compare-table tbody tr > :last-child { border-bottom: 0; }
+  .compare-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 2px;
+    font-size: var(--text-xs);
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+  }
+}
+
+/* ---------- Teléfonos ---------- */
+@media (max-width: 767px) {
+  .pager { display: none; }
+}
+
+@media (max-width: 640px) {
+  body { font-size: 1rem; }
+  .topbar__btn-text { display: none; }
+  .topbar__btn { padding: 0 12px; }
+
+  .hero__actions .btn { width: 100%; }
+  .hero__product { border-radius: var(--radius); align-items: flex-start; }
+  .hero__product .icon { margin-top: 2px; }
+
+  .sheet__row { grid-template-columns: 1fr; gap: 2px; }
+
+  .stage-tab { min-height: 52px; padding: 8px 10px; }
+
+  .case__grid,
+  .case__grid--3 { grid-template-columns: 1fr; }
+  .case__grid--3 > .case__col--theory { grid-column: auto; }
+
+  .adoption__steps { grid-template-columns: 1fr 1fr; }
+  .adoption__step:nth-child(2)::after { display: none; }
+
+  .responses__panel { grid-template-columns: 1fr; }
+  .responses__tabs { display: grid; grid-template-columns: 1fr 1fr; }
+  .response-tab { justify-content: center; padding-inline: 12px; }
+
+  .timeline {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-left: 18px;
+    border-left: 2px solid var(--line-strong);
+  }
+  .timeline__item { border-top: 0; padding: 0 0 22px 10px; }
+  .timeline__item::before { top: 4px; left: -27px; }
+
+  .limits__list { grid-template-columns: 1fr; }
+  .conclusion__actions .btn { width: 100%; }
+
+  .source { grid-template-columns: 2.4rem minmax(0, 1fr); }
+
+  /* Paneles como hoja inferior para no exceder la pantalla */
+  .panel {
+    width: 100%;
+    height: auto;
+    max-height: 88dvh;
+    margin: auto 0 0;
+    border-radius: 22px 22px 0 0;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .panel[open] { animation-name: sheet-in; }
+  }
+
+  .cite-pop {
+    position: fixed;
+    left: 12px !important;
+    right: 12px;
+    top: auto !important;
+    bottom: max(12px, env(safe-area-inset-bottom));
+    width: auto;
+  }
+}
+@keyframes sheet-in { from { transform: translateY(32px); opacity: 0; } to { transform: none; opacity: 1; } }
+
+@media (max-width: 420px) {
+  .hero__sticker { font-size: 0.7rem; }
+  .adoption__steps { grid-template-columns: 1fr; }
+  .adoption__step::after { display: none; }
+  .stage-tab__kicker { display: none; }
+}
+
+@media (max-width: 560px) {
+  .lc-label--series,
+  .lc-label--axis-x,
+  .lc-label--axis-y { display: none; }
+  .lc-label { font-size: 0.75rem; }
+  .lc-axes { display: block; }
+}
+
+/* ---------- Marcos de poca altura (por ejemplo, insertado en Notion) ---------- */
+@media (max-height: 560px) and (min-width: 700px) {
+  .hero { min-height: 0; }
+  .scroll-cue { display: none; }
+}
+
+/* ---------- Colores forzados (alto contraste de Windows) ---------- */
+@media (forced-colors: active) {
+  .stage-tab[aria-selected="true"],
+  .response-tab[aria-selected="true"],
+  .navlink[aria-current] { outline: 3px solid CanvasText; }
+  .lc-highlight { stroke: Highlight; }
+}
+
+/* ---------- Impresión ---------- */
+@media print {
+  .topbar, .sitenav, .pager, .scroll-cue, .nav-backdrop { display: none !important; }
+  body { padding-left: 0; background: #fff; }
+  .acc__panel { grid-template-rows: 1fr !important; visibility: visible !important; }
+  .section { padding-block: 32px; break-inside: avoid-page; }
+  .js [data-reveal] { opacity: 1 !important; transform: none !important; }
+}
